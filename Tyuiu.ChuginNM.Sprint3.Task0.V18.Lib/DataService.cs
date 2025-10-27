@@ -18,7 +18,7 @@ namespace Tyuiu.ChuginNM.Sprint3.Task0.V18.Lib
                 res *= Math.Pow(baseValue, k);
             }
 
-            return res;
+            return Math.Round(res, 3);
         }
     }
 }
