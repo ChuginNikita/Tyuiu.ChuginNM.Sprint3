@@ -1,4 +1,9 @@
-﻿using tyuiu.cources.programming.interfaces.Sprint3;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using tyuiu.cources.programming.interfaces.Sprint3;
 
 namespace Tyuiu.ChuginNM.Sprint3.Task0.V18.Lib
 {
@@ -7,10 +12,9 @@ namespace Tyuiu.ChuginNM.Sprint3.Task0.V18.Lib
         public double GetMultiplySeries(int value, int startValue, int stopValue)
         {
             double res = 1;
-
-            for (int k = startValue; k <= stopValue; k++)
+            double baseValue = 2.0 / (Math.Cos(value) + 0.5);
+            for (int k = 1; k <= 6; k++)
             {
-                double baseValue = 2.0 / (Math.Cos(value) + 0.5);
                 res *= Math.Pow(baseValue, k);
             }
 
