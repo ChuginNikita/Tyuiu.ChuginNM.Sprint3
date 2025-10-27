@@ -13,7 +13,7 @@ namespace Tyuiu.ChuginNM.Sprint3.Task0.V18.Lib
         {
             double res = 1;
             double baseValue = 2.0 / (Math.Cos(value) + 0.5);
-            for (int k = 1; k <= 6; k++)
+            for (int k = startValue; k <= stopValue; k++)
             {
                 res *= Math.Pow(baseValue, k);
             }
