@@ -6,19 +6,18 @@ namespace Tyuiu.ChuginNM.Sprint3.Task5.V10.Lib
     {
         public double GetSumSumSeries(int x, int startValue1, int startValue2, int stopValue1, int stopValue2)
         {
-            double mul = 1;
-            double mul2 = 1;
+            
+            double res = 0;
 
-            for (int k = startValue1; k <= stopValue1; k++)
+            for (int i = startValue1; i <= stopValue1; i++)
             {
-                for (int j = startValue2; j <= stopValue2; j++)
+                for (int k = startValue2; k <= stopValue2; k++)
                 {
-                    mul2 *= (Math.Pow(x, 3) * k + 2);
+                    res += (Math.Pow(x, 3) * k) + 2;
                 }
-                mul *= mul2;
             }
 
-            return Math.Round(mul, 3);
+            return Math.Round(res, 3);
         }
     }
 }

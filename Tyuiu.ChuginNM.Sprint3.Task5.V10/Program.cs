@@ -27,7 +27,7 @@ namespace Tyuiu.ChuginNM.Sprint3.Task5.V10
             Console.WriteLine("* РЕЗУЛЬТАТ                                                               *");
             Console.WriteLine("***************************************************************************");
 
-            Console.WriteLine(ds.GetSumSumSeries(5, 1, 3, 1, 10));
+            Console.WriteLine(ds.GetSumSumSeries(5, 1, 1, 3, 10));
         }
     }
 }
